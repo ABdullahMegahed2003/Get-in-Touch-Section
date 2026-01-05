@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color:red;
+}
+
+.container{
+width: 100%;
+height: 100vh;
+}
+.background{
+    width:90%;
+    margin: auto;
+    height: 70%;
+    background-image: url(images/pngtree-nighttime-cityscape-of-modern-residential-towers-in-manhattan-photo-image_47345186.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width:90%;
+    
+    height: 70%;
+    background-color: rgba(0,0,0,0.6);
+}
